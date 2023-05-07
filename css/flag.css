@@ -1,0 +1,196 @@
+/* japan */
+
+.japan {
+    width: 50%;
+    aspect-ratio: 5 / 3;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.japan-circle {
+    height: 60%;
+    aspect-ratio: 1;
+    background-color: #d7003a;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* uae */
+
+.uae {
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.uae-left {
+    width: 25%;
+    height: 100%;
+    background-color: #f00;
+}
+
+.uae-right {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.uae-top, .uae-middle, .uae-buttom {
+    width: 100%;
+    flex-basis: 33.3%;
+}
+
+.uae-top {
+    background-color: #00732f;
+}
+
+.uae-middle {
+    background-color: #fff;
+}
+
+.uae-buttom {
+    background-color: #000;
+}
+
+/* korea */
+
+.korea {
+    width: 50%;
+    aspect-ratio: 3 / 2;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* korea circle */
+
+.korea-circle-container {
+    height: 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.korea-circle {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: rotate(0.59rad);
+    transform-origin: 50% 50%;
+}
+
+.korea-half-circle-red, .korea-half-circle-blue {
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.korea-half-circle-red {
+    background-color: #cd2e3a;
+}
+
+.korea-half-circle-blue {
+    background-color: #0047a0;
+}
+
+.korea-double-circle-container {
+    height: 25%;
+    aspect-ratio: 2 / 1;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.korea-double-circle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform: rotate(0.59rad);
+    transform-origin: 50% 50%;
+}
+
+.korea-circle-red, .korea-circle-blue {
+    height: 100%;
+    flex-basis: 50%;
+    border-radius: 50%;
+}
+
+.korea-circle-red {
+    background-color: #cd2e3a;
+}
+
+.korea-circle-blue {
+    background-color: #0047a0;
+}
+
+/* korea hakkei */
+
+.korea-double-hakkei-container1, .korea-double-hakkei-container2 {
+    height: 25%;
+    width: calc(100% / 72 * 52);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.korea-double-hakkei1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(0.59rad);
+    transform-origin: 50% 50%;
+}
+
+.korea-double-hakkei2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(-0.59rad);
+    transform-origin: 50% 50%;
+}
+
+.korea-hakke1, .korea-hakke2, .korea-hakkei3, .korea-hakkei4 {
+    height: 100%;
+    width: calc(100% / 52 * 8);
+    display: flex;
+    justify-content: space-between;
+}
+
+.korea-hakkei1-n, .korea-hakkei2-n, .korea-hakkei3-1, .korea-hakkei3-2, .korea-hakkei3-3, .korea-hakkei4-1, .korea-hakkei4-2, .korea-hakkei4-3 {
+    height: 100%;
+    width: calc(100% / 8 * 2);
+}
+
+.korea-hakkei1-n, .korea-hakkei3-1, .korea-hakkei3-3, .korea-hakkei4-2 {
+    background-color: #000;
+}
+
+.korea-hakkei2-n, .korea-hakkei3-2, .korea-hakkei4-1, .korea-hakkei4-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.korea-hakkei2-n-n, .korea-hakkei3-2-n, .korea-hakkei4-1-n, .korea-hakkei4-3-n {
+    width: 100%;
+    height: calc(100% / 12 * 5.5);
+    background-color: #000;
+}

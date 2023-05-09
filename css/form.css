@@ -1,0 +1,32 @@
+.roboto-thin, .roboto-medium, .roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.ubuntu-medium, .ubuntu-medium-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.roboto-thin {
+    font-weight: 100;
+}
+
+.roboto-medium {
+    font-weight: 500;
+}
+
+.roboto-bold {
+    font-weight: 700;
+}
+
+.ubuntu-medium-italic {
+    font-style: italic;
+}
+
+.search::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f002";
+    font-weight: 900;
+}

@@ -1,1 +1,79 @@
-いろいろなフォームを使ってみよう
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset><!-- 以下email -->
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" pattern=".+@globex\.com" title="globex 社のメールアドレスのみを入力してください" size="30" required />
+        </fieldset>
+        <fieldset><!-- 以下ラジオボタン -->
+            <legend>好きなものは？</legend>
+            <div>
+              <input type="radio" id="curry" name="food" value="curry" checked required />
+              <label for="curry">カレー</label>
+            </div>
+            <div>
+              <input type="radio" id="sushi" name="food" value="sushi" />
+              <label for="sushi">お寿司</label>
+            </div>
+            <div>
+              <input type="radio" id="grilled-meat" name="food" value="grilled-meat" />
+              <label for="grilled-meat">焼肉</label>
+            </div>
+            <div>
+                <input type="radio" id="others" name="food" value="others" />
+                <label for="others">その他</label>
+            </div>
+        </fieldset>
+        <fieldset><!-- 以下チェックボックス -->
+            <legend>好きなものは？</legend>
+            <div>
+              <input type="checkbox" id="curry-2" name="food-2" value="curry-2" checked required />
+              <label for="curry-2">カレー</label>
+            </div>
+            <div>
+              <input type="checkbox" id="sushi-2" name="food-2" value="sushi-2" />
+              <label for="sushi-2">お寿司</label>
+            </div>
+            <div>
+                <input type="checkbox" id="grilled-meat-2" name="food-2" value="grilled-meat-2" />
+                <label for="grilled-meat-2">焼肉</label>
+            </div>
+            <div>
+                <input type="checkbox" id="others-2" name="food-2" value="others-2" />
+                <label for="others-2">その他</label>
+            </div>
+        </fieldset>
+        <fieldset><!-- 以下カレンダー -->
+            <label for="start">誕生日</label>
+            <input type="date" id="start" name="trip-start"
+               value="today"
+               min="2018-01-01" max="2018-12-31" required />
+        </fieldset>
+        <fieldset><!-- 以下range -->
+            <p>Audio settings:</p>
+            <div>
+                <input type="range" id="volume" name="volume" min="0" max="11" />
+                <label for="volume">Volume</label>
+            </div>
+            <div>
+                <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="80" step="20" />
+                <label for="cowbell">Cowbell</label>
+            </div>
+        </fieldset>
+        <fieldset><!-- 以下パスワード -->
+            <label for="pass">パスワード</label>
+            <input type="password" id="pass" name="password" minlength="8" autocomplete="current-password" required />
+        </fieldset>
+        <fieldset><!-- 以下送信ボタン -->
+            <button type="submit">送信</button>
+        </fieldset>
+    </form>
+</body>
+</html>
